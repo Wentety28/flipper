@@ -2102,6 +2102,13 @@
   optionalDependencies:
     node-notifier "^8.0.0"
 
+"@jest/schemas@^28.0.0":
+  version "28.0.0"
+  resolved "https://registry.yarnpkg.com/@jest/schemas/-/schemas-28.0.0.tgz#55cf5fcc82440a2a39b717bb949570c501fd5410"
+  integrity sha512-Pap9Jvwr8KYFvDgkya/p0FCVya+jZkWt57lHpwBylfjgmwi/gtXfhyAO/Cw+jKuMafHcXY0beNf2XV2pkcu9vA==
+  dependencies:
+    "@sinclair/typebox" "^0.23.3"
+
 "@jest/source-map@^24.9.0":
   version "24.9.0"
   resolved "https://registry.yarnpkg.com/@jest/source-map/-/source-map-24.9.0.tgz#0e263a94430be4b41da683ccc1e6bffe2a191714"
@@ -2427,6 +2434,11 @@
   version "1.2.0"
   resolved "https://registry.yarnpkg.com/@reach/observe-rect/-/observe-rect-1.2.0.tgz#d7a6013b8aafcc64c778a0ccb83355a11204d3b2"
   integrity sha512-Ba7HmkFgfQxZqqaeIWWkNK0rEhpxVQHIoVyW1YDSkGsGIXzcaW4deC8B0pZrNSSyLTdIk7y+5olKt5+g0GmFIQ==
+
+"@sinclair/typebox@^0.23.3":
+  version "0.23.4"
+  resolved "https://registry.yarnpkg.com/@sinclair/typebox/-/typebox-0.23.4.tgz#6ff93fd2585ce44f7481c9ff6af610fbb5de98a4"
+  integrity sha512-0/WqSvpVbCBAV1yPeko7eAczKbs78dNVAaX14quVlwOb2wxfKuXCx91h4NrEfkYK9zEnyVSW4JVI/trP3iS+Qg==
 
 "@sindresorhus/is@^0.14.0":
   version "0.14.0"
@@ -3606,10 +3618,10 @@ ansi-regex@^4.1.0:
   resolved "https://registry.yarnpkg.com/ansi-regex/-/ansi-regex-4.1.0.tgz#8b9f8f08cf1acb843756a839ca8c7e3168c51997"
   integrity sha512-1apePfXM1UOSqw0o9IiFAovVz9M5S1Dg+4TrDwfMewQ6p/rmMueb7tWZjQ1rx4Loy1ArBggoqGpfqqdI4rondg==
 
-ansi-regex@^5.0.0:
-  version "5.0.0"
-  resolved "https://registry.yarnpkg.com/ansi-regex/-/ansi-regex-5.0.0.tgz#388539f55179bf39339c81af30a654d69f87cb75"
-  integrity sha512-bY6fj56OUQ0hU1KjFNDQuJFezqKdrAyFdIevADiqrWHwSlbmBNMHp5ak2f40Pm8JTFyM2mqxkG6ngkHO11f/lg==
+ansi-regex@^5.0.0, ansi-regex@^5.0.1:
+  version "5.0.1"
+  resolved "https://registry.yarnpkg.com/ansi-regex/-/ansi-regex-5.0.1.tgz#082cb2c89c9fe8659a311a53bd6a4dc5301db304"
+  integrity sha512-quJQXlTSUGL2LH9SUXo8VwsY4soanhgo6LNSm84E1LBcE8s3O0wpdiRzyR9z/ZZJMlMWv37qOOb9pdJlMUEKFQ==
 
 ansi-styles@^3.2.0, ansi-styles@^3.2.1:
   version "3.2.1"
@@ -10509,7 +10521,7 @@ pretty-format@^26.0.0, pretty-format@^26.6.2:
     ansi-styles "^4.0.0"
     react-is "^17.0.1"
 
-pretty-format@^27.0.2, pretty-format@^27.2.0:
+pretty-format@^27.0.2:
   version "27.2.0"
   resolved "https://registry.yarnpkg.com/pretty-format/-/pretty-format-27.2.0.tgz#ee37a94ce2a79765791a8649ae374d468c18ef19"
   integrity sha512-KyJdmgBkMscLqo8A7K77omgLx5PWPiXJswtTtFV7XgVZv2+qPk6UivpXXO+5k6ZEbWIbLoKdx1pZ6ldINzbwTA==
@@ -10518,6 +10530,16 @@ pretty-format@^27.0.2, pretty-format@^27.2.0:
     ansi-regex "^5.0.0"
     ansi-styles "^5.0.0"
     react-is "^17.0.1"
+
+pretty-format@^28.0.0:
+  version "28.0.0"
+  resolved "https://registry.yarnpkg.com/pretty-format/-/pretty-format-28.0.0.tgz#d0bd7ece4a113692865ec493df0a26490c791d21"
+  integrity sha512-CoBfnZavDij+aBzQCVWIIYaZEe1ifIGLI2lG+c3/spHWhpeSt4kpjGd5W50GqtdtbL/Ojx4ZonGIqZVdUNoBGQ==
+  dependencies:
+    "@jest/schemas" "^28.0.0"
+    ansi-regex "^5.0.1"
+    ansi-styles "^5.0.0"
+    react-is "^18.0.0"
 
 printj@~1.1.0:
   version "1.1.2"
@@ -11194,6 +11216,11 @@ react-is@^16.12.0, react-is@^16.13.1, react-is@^16.7.0, react-is@^16.8.1:
   version "17.0.2"
   resolved "https://registry.yarnpkg.com/react-is/-/react-is-17.0.2.tgz#e691d4a8e9c789365655539ab372762b0efb54f0"
   integrity sha512-w2GsyukL62IJnlaff/nRegPQR94C/XXamvMWmSHRJ4y7Ts/4ocGRmTHvOs8PSE6pB3dWOrD/nueuU5sduBsQ4w==
+
+react-is@^18.0.0:
+  version "18.0.0"
+  resolved "https://registry.yarnpkg.com/react-is/-/react-is-18.0.0.tgz#026f6c4a27dbe33bf4a35655b9e1327c4e55e3f5"
+  integrity sha512-yUcBYdBBbo3QiPsgYDcfQcIkGZHfxOaoE6HLSnr1sPzMhdyxusbfKOSUbSd/ocGi32dxcj366PsTj+5oggeKKw==
 
 react-lifecycles-compat@^3.0.4:
   version "3.0.4"
