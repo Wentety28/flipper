@@ -17,7 +17,7 @@
     "docusaurus-plugin-internaldocs-fb": "^0.9.9",
     "file-cli": "^1.2.0",
     "fs-extra": "^10.0.0",
-    "mermaid": "^8.13.2",
+    "mermaid": "^9.1.2",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
     "ts-node": "^10.2.1",
